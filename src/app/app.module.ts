@@ -9,8 +9,9 @@ import { MovieListComponent } from './movie-list/movie-list.component';
 import { SingleMovieComponent } from './movie-list/single-movie/single-movie.component';
 import { MovieFormComponent } from './movie-list/movie-form/movie-form.component';
 import { HeaderComponent } from './header/header.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
