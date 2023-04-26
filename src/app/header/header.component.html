@@ -20,8 +20,8 @@
           </button>
         </a>
       </li>
-      <li routerLinkActive="active"><!--(click)="onSignOut()"-->
-        <a style="cursor:pointer" *ngIf="isAuth">
+      <li routerLinkActive="active"><!---->
+        <a style="cursor:pointer" (click)="onSignOut()" *ngIf="isAuth">
           <button class="btn btn-danger">
             Déconnexion
           </button>
